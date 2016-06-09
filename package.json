@@ -1,6 +1,6 @@
 {
   "name": "dothiswhenvisible",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small jQuery plugin to excute a callback when an element is above the bottom of the viewport",
   "main": "src/dothiswhenvisible.js",
   "scripts": {

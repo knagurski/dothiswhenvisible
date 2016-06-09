@@ -1,5 +1,5 @@
-// register `doThisWhenVisable` jQuery plugin
-$.fn.doThisWhenVisable = function(callback) {
+// register `doThisWhenVisible` jQuery plugin
+$.fn.doThisWhenVisible = function(callback) {
   // grab the window as a jQuery object
   var $window = $(window);
     

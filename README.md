@@ -1,5 +1,5 @@
 # doThisWhenVisible
-A small jQuery plugin to excute a callback when an element is above the bottom of the viewport.
+A small jQuery plugin to execute a callback when an element is above the bottom of the viewport.
 
 ## Usage
 doThisWhenVisible is a jQuery plugin, so make sure you have jQuery on the page before you include this.
@@ -12,7 +12,7 @@ doThisWhenVisible is a jQuery plugin, so make sure you have jQuery on the page b
 Then you just need to get a hold of the element(s) you want to monitor and call `doThisWhenVisible`, passing in your callback.
 
 ```javascript
-jQuery('.target').doThisWhenVisable(function($el){
+jQuery('.target').doThisWhenVisible(function($el){
     console.log('It would appear that ', $el, ' is now visible');
 });
 ```
