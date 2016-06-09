@@ -21,6 +21,6 @@ $.fn.doThisWhenVisable = function(callback) {
     };
 
     // register the scroll event handler
-    $window.scroll(scrollHandler);
+    $window.scroll(scrollHandler).scroll();
   });
 };
