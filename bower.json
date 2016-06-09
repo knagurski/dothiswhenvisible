@@ -1,0 +1,17 @@
+{
+  "name": "dothiswhenvisible",
+  "description": "A small jQuery plugin to excute a callback when an element is above the bottom of the viewport",
+  "main": "src/dothiswhenvisible.js",
+  "authors": [
+    "Kevin Nagurski <knagurski@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do this when visible</title>
+    <style>
+        .wrapper {
+            margin: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper > * {
+            border: 1px solid black;
+            margin: 1rem;
+            color: white;
+            font-size: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spacer {
+            min-height: calc(100vh - 4rem);
+            background-color: rgb(200,200,200);
+        }
+
+        .target {
+            min-height: calc(50vh - 4rem);
+            background-color: rgb(150,150,150);
+            transition: background-color 3s ease-in-out;
+        }
+
+        .target.visible {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="wrapper">
+        <div class="spacer"><span>Spacer</span></div>
+        <div class="target"><span>Target 1</span></div>
+        <div class="spacer"><span>Spacer</span></div>
+        <div class="target"><span>Target 2</span></div>
+        <div class="spacer"><span>Spacer</span></div>
+        <div class="target"><span>Target 3</span></div>
+        <div class="spacer"><span>Spacer</span></div>
+        <div class="target"><span>Target 4</span></div>
+    </div>
+    
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="../dist/jquery.dothiswhenvisible.min.js"></script>
+    <script>
+        $('.target').doThisWhenVisable(function($el) {
+            $el.addClass('visible');
+        });
+    </script>
+</body>
+</html>
